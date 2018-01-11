@@ -48,16 +48,6 @@ class RegisterUser extends ApiFormRequest
 Now you can use in your controller.
 
 ```php
-// Will automatically run the filters, sorts and search
-$teams = Team::all();
-```
-```php
-GET /teams?status=active // Get active teams
-GET /teams?sort=-name,created_at // Retrieves a list of teams in descending order of name. Within a specific name, older teams are ordered first
-GET /teams?q=manny // Retrieves data mentioning the word 'manny'
-GET /teams?fields=id,name // Retrieves fields 'id' and 'name'
-```
-```php
 namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
