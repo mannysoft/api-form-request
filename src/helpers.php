@@ -1,29 +1,13 @@
 <?php
 
-if (!function_exists('hanap')) {
+if (!function_exists('api_validate')) {
     /**
-     * Get the Hanap instance
+     * Get the ApiFormRequest instance
      *
-     * @return \Mannysoft\Hanap\Hanap
+     * @return \Mannysoft\ApiFormRequest\ApiFormRequest
      */
-    function hanap()
+    function api_validate()
     {
-        return app(\Mannysoft\Hanap\Hanap::class);
-    }
-}
-
-if (!function_exists('search')) {
-    
-    function search()
-    {
-        return hanap()->search();
-    }
-}
-
-if (!function_exists('show_fields')) {
-    
-    function show_fields($array)
-    {
-        return hanap()->showFields($array);
+        return app(\Mannysoft\ApiFormRequest\ApiFormRequest::class);
     }
 }

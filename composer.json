@@ -1,6 +1,6 @@
 {
     "name": "mannysoft/hanap",
-    "description": "Laravel package API Result filtering, sorting & searching.",
+    "description": "Laravel package for  extending FormRequest for REST API Request.",
     "keywords": [
         "laravel",
         "api",
