@@ -1,5 +1,5 @@
 {
-    "name": "mannysoft/hanap",
+    "name": "mannysoft/api-form-request",
     "description": "Laravel package for  extending FormRequest for REST API Request.",
     "keywords": [
         "laravel",
