@@ -58,7 +58,7 @@ use App\User;
 class UserController extends Controller
 {
 
-	public function register(RegisterUser $request)
+    public function register(RegisterUser $request)
     {
         User::create([
             'fullname' => request('fullname'),
