@@ -46,8 +46,13 @@ abstract class ApiFormRequest extends LaravelFormRequest
             ];
         }
 
+        if ($this->statusCode == 400) {
+            $statusResponse = JsonResponse::HTTP_BAD_REQUEST;
+        } else {
+            $statusResponse = JsonResponse::HTTP_UNPROCESSABLE_ENTITY;
+        }
 
         throw new HttpResponseException(response()->json(['errors' => $transformed
-        ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
+        ], $statusResponse));
     }
 }
