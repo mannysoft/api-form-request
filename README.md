@@ -20,6 +20,10 @@ use Mannysoft\ApiFormRequest\ApiFormRequest;
 
 class RegisterUser extends ApiFormRequest
 {
+    // Whether you want to use other status code other than 422.
+    // You can use 400 also
+    protected $statusCode = 422;
+    
     /**
      * Determine if the user is authorized to make this request.
      *
