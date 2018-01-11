@@ -6,6 +6,7 @@
         "api",
         "validation"
     ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Manny Isles"
