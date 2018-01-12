@@ -52,7 +52,7 @@ abstract class ApiFormRequest extends LaravelFormRequest
             $statusResponse = JsonResponse::HTTP_UNPROCESSABLE_ENTITY;
         }
 
-        throw new HttpResponseException(response()->json(['errors' => $transformed
+        throw new HttpResponseException(response()->json(['status' => 'failed', 'errors' => $transformed
         ], $statusResponse));
     }
 }
