@@ -71,7 +71,7 @@ abstract class ApiFormRequest extends LaravelFormRequest
      */
     protected function failedAuthorization()
     {
-        throw new HttpResponseException(response()->json(['status' => 'failed', 'errors' => 'Forbidden'], 403));
+        throw new HttpResponseException(response()->json(['status' => 'failed', 'errors' => 'Unauthorized'], 401));
         // throw new UnauthorizedException;
     }
 }
