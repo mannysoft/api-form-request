@@ -35,13 +35,7 @@ abstract class ApiFormRequest extends LaravelFormRequest
      */
     protected function failedValidation(Validator $validator)
     {
-        $laravel = app();
-        $version = $laravel::VERSION;
-        if (substr($version, 0, 3) == '5.4') {
-            $errors = $validator->messages()->messages();
-        } else {
-            $errors = (new ValidationException($validator))->errors();
-        }
+        $errors = (new ValidationException($validator))->errors();
         
         $transformed = [];
 
